@@ -1,6 +1,7 @@
 services:
   ultrafwd:
     build: .
+    image: ultraforward:dev
     restart: unless-stopped
     volumes:
       - ./data:/app/data

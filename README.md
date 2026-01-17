@@ -87,18 +87,19 @@ Bot 启动后会执行自检：
 ## 🚀 启动机器人
 
 ```bash
-#创建专属运行目录并进入
-mkdir ultraforward && cd ultraforward
-docker run -it --rm -v ./config:/app/config ghcr.io/azusa-mikan/ultraforward:latest
+# 克隆仓库并进入目录
+git clone https://github.com/Azusa-mikan/UltraForward.git ultraforward && cd ultraforward
 
-# 随后程序会输出「已生成默认配置文件，请编辑后重新运行」并退出。
+# 构建本地镜像
+docker-compose build
+
+# 首次运行生成默认配置
+docker run --rm -v ./config:/app/config ultraforward:dev
+
 # 编辑配置文件
 nano ./config/config.yaml
 
-# 下载 docker-compose.yaml 配置文件
-wget https://raw.githubusercontent.com/Azusa-mikan/UltraForward/main/docker-compose.yaml -O docker-compose.yaml
-
-# 编辑 docker-compose.yaml 配置文件（可选）
+# （可选）自定义 docker-compose.yaml
 nano docker-compose.yaml
 
 # 启动机器人
