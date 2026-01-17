@@ -1,0 +1,22 @@
+[project]
+name = "UltraForward"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "asyncmy>=0.2.10",
+    "asyncpg>=0.31.0",
+    "colorlog>=6.10.1",
+    "hurry-filesize>=0.9",
+    "numpy>=2.4.1",
+    "openai>=2.15.0",
+    "pillow>=12.1.0",
+    "pydantic>=2.12.5",
+    "pympler>=1.1",
+    "python-telegram-bot[job-queue,rate-limiter]>=22.5",
+    "pyyaml>=6.0.3",
+    "sqlalchemy>=2.0.45",
+    "telegram-markdown-converter>=1.0.6",
+]

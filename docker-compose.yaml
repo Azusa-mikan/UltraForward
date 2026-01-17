@@ -1,0 +1,7 @@
+services:
+  ultrafwd:
+    image: ghcr.io/Azusa-mikan/ultraforward:latest
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./config:/app/config
