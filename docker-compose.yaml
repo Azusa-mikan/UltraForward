@@ -1,6 +1,6 @@
 services:
   ultrafwd:
-    image: ghcr.io/Azusa-mikan/ultraforward:latest
+    image: ghcr.io/azusa-mikan/ultraforward:latest
     restart: unless-stopped
     volumes:
       - ./data:/app/data

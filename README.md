@@ -89,7 +89,7 @@ Bot 启动后会执行自检：
 ```bash
 #创建专属运行目录并进入
 mkdir ultraforward && cd ultraforward
-docker run -it --rm -v ./config:/app/config ghcr.io/Azusa-mikan/ultraforward:latest
+docker run -it --rm -v ./config:/app/config ghcr.io/azusa-mikan/ultraforward:latest
 
 # 随后程序会输出「已生成默认配置文件，请编辑后重新运行」并退出。
 # 编辑配置文件
