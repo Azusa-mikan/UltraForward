@@ -3,5 +3,6 @@ services:
     image: ghcr.io/Azusa-mikan/ultraforward:latest
     restart: unless-stopped
     volumes:
+      - ./data:/app/data
       - ./logs:/app/logs
       - ./config:/app/config
