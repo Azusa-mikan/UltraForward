@@ -1077,5 +1077,5 @@ class MyBot:
         signal.signal(signal.SIGTERM, self.stop)
         self.bot.run_polling(
             stop_signals=None,
-            allowed_updates=Update.MESSAGE_REACTION
+            allowed_updates=Update.ALL_TYPES,
         )
