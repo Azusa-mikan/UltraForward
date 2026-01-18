@@ -61,6 +61,7 @@ UltraForward 是一个功能强大的 Telegram PM Bot。
   - SQLite（默认，无需额外安装）
   - MySQL / MariaDB（可选，需要安装 `asyncmy`）
   - PostgreSQL（可选，需要安装 `asyncpg`）
+  - 以上数据库对应的异步驱动均已在 Docker 镜像中安装。
 
 ## 📡 Telegram 群组准备
 
@@ -140,9 +141,10 @@ database:
   - 数据库文件为 `data/<database>.db`（默认 `data/vrb.db`）。
 - 当使用 MySQL/MariaDB/PostgreSQL 时：
   - 请确保安装了对应驱动：
-    - SQLite: `aiosqlite`（已在 `requirements.txt` 中）
+    - SQLite: `aiosqlite`
     - MySQL/MariaDB: `asyncmy`
     - PostgreSQL: `asyncpg`
+  - 以上驱动均已在 Docker 镜像中安装，无需额外配置。
   - 否则程序会在启动时输出错误并退出。
 
 ### 3. OpenAI / DeepSeek 垃圾检测配置
