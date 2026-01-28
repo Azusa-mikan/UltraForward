@@ -976,7 +976,13 @@ class MyBot:
             await update.message.reply_text("此用户无效")
             return
 
-        verified = self.str_bool_map[args[0]]
+        bool_arg = args[0].strip().lower()
+        if bool_arg not in self.str_bool_map:
+            await update.message.reply_text(
+                "用法: /verify <true/false>"
+            )
+            return
+        verified = self.str_bool_map[bool_arg]
         if not verified:
             self.cache.set_flag(user_data.userid, VerifyType.VERIFY.value, False)
             await self.uf_repo.update_verified(user_data.userid, False)
