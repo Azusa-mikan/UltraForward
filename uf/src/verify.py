@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # This file is based on zzyCaptcha (https://github.com/TianmuTNT/zzyCaptcha)
-# and has been adapted for use in VisualRelayBot.
+# and has been adapted for use in UltraForward.
 # Modifications by Azusa-Mikan, 2026.
 # See THIRD_PARTY_LICENSES/LICENSE.txt in the project root directory for the full license text.
 
